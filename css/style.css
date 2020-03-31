@@ -1,0 +1,118 @@
+body {
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0px;
+  padding-bottom: 80px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; /* no scroll bars even if something goes outside its container */
+  height: auto;
+}
+
+#main-header {
+  background-color: #E7CC91;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+#main-header h1 {
+  font-size: 40px;
+  line-height: 1.8em;
+}
+
+#navbar {
+  background-color: #342A2F;
+  color: #fff;
+}
+
+#navbar ul {
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline;
+  margin-right: 30px;
+}
+
+#navbar a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+#navbar a:hover {
+  color: #E7CC91;
+  /* transform: scale(2); */
+}
+
+#showcase {
+  background-image: url('../images/three-boules.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* min-height: 300px; height will grow when window shrinks. makes it responsive. */
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+#main {
+  float: left;
+  width: 60%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 40%;
+  background: #333;
+  color: #fff;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  #main {
+    width: 100%;
+    float: none;
+  }
+  #sidebar {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 778px) {
+  #main-header h1 {
+    line-height: 1em;
+    font-size: 30px;
+  }
+}
